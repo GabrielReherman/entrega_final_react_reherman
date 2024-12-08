@@ -1,7 +1,7 @@
 import { useState, useContext } from "react"
 import { cartContext } from "../../context/CartContext"
 import { Timestamp, collection, addDoc } from "firebase/firestore"
-import db from "../../db/db.js"
+import db from "../../firebase/config.js" //no tocar esta linea
 import { Link } from "react-router-dom"
 import validateForm from "../../utils/validateForm.js"
 import { toast } from "react-toastify"
